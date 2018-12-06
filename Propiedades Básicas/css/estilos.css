@@ -1,0 +1,20 @@
+/* 1.- crearemos una regla para los parrafos utilizando tex-aling*/
+p{
+  text-align: justify;
+  text-indent: 2cm;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+}
+h1{
+  text-decoration: overline;
+  word-spacing: 30px;
+  color: orange;
+  white-space: pre;
+}
+/* text-shadow; 1.- supongamos que queremos que cuando seleccionemos un texto cambie de color tanto en las sombras o el que viene por defecto como en el color del texto*/
+p::selection/*este pseudoelemento nos permitira controlar el comportamiento del texto seleccionado en un parrafo*/{
+  background: green;
+  color: black;
+  text-shadow: 2px 2px 2px #fff;
+  /* 2.- Observemos que esta regla solo tiene 3 atributos miremos que en este caso no especificamos un argumento para el atributo blur*/
+}

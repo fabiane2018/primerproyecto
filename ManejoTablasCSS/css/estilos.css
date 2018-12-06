@@ -1,0 +1,39 @@
+/*1.- comenzaremos aplicando la propiedad de borde ala etiqueta table de la sig manera:*/
+/*table{
+  border: 1px solid black;
+  /*..y observaremos en el navegador que solo el borde del exterior de la tabla se pinto*/
+/*}
+/* 2.- si queremos pintar el borde de cada una de las celdas debemos aplicar esta propiedad a los selectores td, asi:*/
+/*td{
+  border: 1px solid black;
+  /*..notaremos que los bordes se aplicaron a las etiquetas td, con este ejemplo se demuestra que el css asigna las propiedades de visualizacion a cada etiqueta independiente de las etiquetas que lo contengan*/
+/*}
+/*3.- para aplicar el borde a todas las celdas de la tabla las agrupamos en un solo selector de la sig manera:*/
+table, td, th{
+  border: 1px solid black;
+  /*..notamos que se repiten los bordes, para evitar esta repeticion, css tiene la propiedad border-collapse que se debe aplicar al selector table pasandole como atributo collapse */
+}
+table{
+  /*..si pasamos un porcentaje a cualquiera de las propiedades width o height el navegador asigna un porcentaje del contenedor de la etiqueta, por ejemplo, le asignaremos el 100% ala propiedad width para el selector table y si cambiamos su porcentaje a la mitad veremos que la tabla tiene la mitad de la pagina web*/
+  width: 50%;
+  border-collapse: collapse;
+}
+/* 4.- ahora veremos de como manejar el ancho y el alto de cada celda, asi como la alineacion del texto, para añadir un ancho especifico utilizaremos la propiedad width para el ancho y adjuntaremos las sig lineas del css de los selectores td y th*/
+td,th{
+  width: 100px;
+  height: 30px;
+}
+/* 5.- Si queremos alinear el texto horinzontalmente utilizamos la propiedad text-aling que recibe como atributo lo que sale en la imagen(text-aling), por otro lado si queremos alinear el texto verticalmente utilizamos la propiedad vertical-aling, que recibe los atributos de la imagen(vertical-aling), para probar estas propiedades alinearemos el texto de las etiquetas th a la derecha  y verticalmente hacia arriba añadiendo las sig lineas:*/
+th{
+  text-align: right;
+  vertical-align: top;
+}
+/*..en cambio a la etiqueta td le asignaremos una alineacion ala izquierda en la parte inferior adjuntando el sig codigo*/
+td{
+  text-align: left;
+  vertical-align: bottom;
+}
+/* 6.- dentro de cada celda se pueden aplicar las opciones margin, backgraund y hover como en las otras etiquetas, pero esto quedara para que lo experimente luego yo, ahora veremos una opcion de cambio de colores de fondo en las franjas alternas de una columna lo cual es muy util al momento de facilitar la visualizacion de la informacion para el usuario y esto lo hacemos de la sig manera:*/
+tr:nth-child(odd){
+  background-color: #D1D1D1;
+}
