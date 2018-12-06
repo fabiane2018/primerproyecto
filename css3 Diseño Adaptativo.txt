@@ -1,0 +1,38 @@
+CSS3 Diseño Adaptativo.
+El viewport es un concepto que aparece junto con el Diseño Web Adaptativo y el Diseño web, inicialmente fue pensado para que los sitios web pudieran adaptarse a dispositivos móviles.
+Este concepto hace referencia al área disponible para renderizar una página web, es decir, el área visible del navegador (Excluyendo la barra de búsqueda, marcadores, pestañas y demás cosas del navegador).
+El viewport se configura dentro de la etiqueta a través de un elemento . Entre los valores de configuración que podemos especificarle se encuentran:
+Nivel de escalado que puede realizar el usuario.
+El zoom inicial que debe realizar el navegador.
+El área disponible para renderizar.
+<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0>  
+width=device-width: Área disponible para renderizar, en este caso todo el ancho que tenga el viewport del dispositivo.
+user-scalable=no: El usuario no puede hacer escala.
+initial-scale=1.0: Nivel de zoom/escala Inicial.
+Esta es la definición oficial para que tu página web se adapte de forma correcta a los móviles.
+La era de los dispositivos móviles trajo con sigo algunos problemas para los desarrolladores y diseñadores web. A la hora de comenzar un proyecto web aparecen preguntas como ¿Qué resolución de pantalla es la adecuada para realizar un diseño o maquetación web?, ¿La página web será flexible o fija?, ¿Será usable en móviles? .
+La respuesta a todo esto es simple y la hemos mencionado en temas anteriores. “¡Diseñar sitios web adaptables y usables en móviles en la actualidad no es ni un valor añadido, ni una característica especial de una página, es una obligación!”, por tanto, tenemos que tener en cuenta todas las resoluciones posibles, diseño flexible y usabilidad.
+El problema
+La cantidad de resoluciones de pantalla que encontramos en el mercado es demasiado amplia. Teléfonos celulares, Tablets, Computadores Portátiles. Aparte de todo esto debemos tener en cuenta la orientación del dispositivo, el tipo de densidad de píxeles y si es retina display como es el caso de muchos de los dispositivos Apple.
+Entre las medidas más comunes de cada dispositivo se encuentran las siguientes:
+Celulares:
+iPhone 4 y 4S: 320 x 480
+iPhone 5 y 5S: 320 x 568
+iPhone 6: 375 x 667
+iPhone 6+: 414 x 736
+Nexus 4: 384 x 598
+Nexus 5: 360 x 598
+Galaxy S3, S4, S5: 360 x 640
+HTC One: 360 x 640
+Tabletas:
+iPad (*) 1024 x 768
+Galaxy Tab 2 y 3 (7.0 pulgadas): 600 x 1024
+Galaxy Tab 2 y 3 (10.1 pulgadas): 800 x 1280
+Nexus 7: 603 x 966
+Nexus 10: 800 x 1280
+Computadoras:
+Pantallas pequeñas: 1024x600
+Pantallas medianas: 1280 x 720 / 1280x800
+Galaxy Tab 2 y 3 (10.1 pulgadas): 800 x 1280
+Pantallas grandes: ancho superior a 1400 píxeles, ejemplo 1400x900 o 1600 x 1200.
+USO ADAPTATIVO DE IMAGENES Y VIDEOS: como hacer que las imagenes de nuestro proyecto web se adapten a cualquier dispositivo?, hasta ahora hemos usado la etiqueta img con valores de los tamaños en pixeles, pero ahora usaremos las unidades de medidas en porcentajes para que sean adaptativas con todos los dispositivos, recordemos que en este caso el tamaño maximo sera siempre de 100% para que la imagen no supere el tamaño maximo de la pantalla o del contenedor donde se encuentra. 
