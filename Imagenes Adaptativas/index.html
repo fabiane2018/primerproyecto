@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width,user-scalable=no">
+    <title>Imagenes Adaptativas</title>
+  </head>
+  <body>
+    <picture>
+      <!--1.-con estas etiquetas le estamos diciendo al navegador que mientras el minimo de pixeles de la pantalla corresponda a lo que hemos anotado mostrara la imagen respectiva-->
+      <source media="(min-width: 786px)" srcset="img/ballena.jpg">
+      <source media="(min-width: 480px)" srcset="img/perro.jpg">
+        <!--2.- y en caso que el navegador no tenga la capacidad de interpretar la etiqueta picture muestra por defecto la imagen que se encuentra en la etiqueta img, para este ejemplo se usaron imagenes diferentes pero siempre se deben usar la misma imagen optimizada en tamaños diferentes para cada dispositivo -->
+      <img src="img/rinoceronte.jpg" />
+    </picture>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+/*1.- crearemos una regla para la etiqueta video, la primera propiedad de la regla sera width y se recomienda agregar max-width:100%; con esta regla lograremos que el espacio del browser no sea superado cuando el usuario maximize el video*/
+video{
+  width: 50%;
+  max-width: 100%;
+}

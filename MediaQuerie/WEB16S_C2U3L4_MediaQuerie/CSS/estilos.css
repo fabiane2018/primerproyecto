@@ -1,0 +1,11 @@
+/*Lo primero que debemos hacer es definir el tipo de mediaquery segun el tipo de dispositivo en que va a ser vista nuestra pagina, vamos a suponer que se utilizara un comportamiento especial, por ejemplo que el usuario vaya a imprimir el sitio, lo que debemos hacer es crear un llamado a una regla en la etiqueta link llamada mediaprint, creamos los selectores que necesitamos para este caso asi el browser sabra cuales estilos renderizar*/
+/*1.- Al interior de estas llaves colocaremos toda la hoja de estilos aplicable a esta condicion, hasta el momento no hemos visualizado ningun cambio, debemos recordar que el mediaquery que estamos creando solo es aplicable a la impresion, por tanto en un espacio vacio de la pantalla y con click derecho presionamos imprimir y vemos el resultado, como vemos la imagen se viasuliza en una proporcion incorrecta. 2.- vamos a agregar entonces un selector para la imagen y vamos a decirle que ocupe el 100% del espacio horizontal  */
+@media print{
+  img{
+    width: 100%;
+  }
+
+  h1{
+    text-align: center;
+  }
+ }

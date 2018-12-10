@@ -35,4 +35,26 @@ Pantallas pequeñas: 1024x600
 Pantallas medianas: 1280 x 720 / 1280x800
 Galaxy Tab 2 y 3 (10.1 pulgadas): 800 x 1280
 Pantallas grandes: ancho superior a 1400 píxeles, ejemplo 1400x900 o 1600 x 1200.
-USO ADAPTATIVO DE IMAGENES Y VIDEOS: como hacer que las imagenes de nuestro proyecto web se adapten a cualquier dispositivo?, hasta ahora hemos usado la etiqueta img con valores de los tamaños en pixeles, pero ahora usaremos las unidades de medidas en porcentajes para que sean adaptativas con todos los dispositivos, recordemos que en este caso el tamaño maximo sera siempre de 100% para que la imagen no supere el tamaño maximo de la pantalla o del contenedor donde se encuentra. 
+USO ADAPTATIVO DE IMAGENES Y VIDEOS: como hacer que las imagenes de nuestro proyecto web se adapten a cualquier dispositivo?, hasta ahora hemos usado la etiqueta img con valores de los tamaños en pixeles, pero ahora usaremos las unidades de medidas en porcentajes para que sean adaptativas con todos los dispositivos, recordemos que en este caso el tamaño maximo sera siempre de 100% para que la imagen no supere el tamaño maximo de la pantalla o del contenedor donde se encuentra. De esta manera las imagenes se adaptaran a cualquier dispositvo.Pero para que el codigo cumpla con las reglas semanticas es necesario agregar la etiqueta figure la cual sera contenedora de las imagenes que tengamos con img su aplicacion es bastante simple solamente encerramos la etiqueta img dentro de la etiqueta figure, para mejorar la presentacion de la imagen en la cual estamos trabajando es preciso crear una leyenda o pie de foto de la misma, esto se logra con la etiqueta figcaption ala cual se le agrega un texto referente a la imagen. Por otra parte el html5 cuenta con una nueva etiqueta para el manejo de las imagenes llamada pictures; esta permite que el navegador seleccione entre varias imagenes similares la que mejor se adapte al dispositivo esto quiere decir que cuando tenemos una sola imagen que debe adaptarse en algunas ocaciones quedaran espacios vacios ya que la modificacion del tamaño debe ser proporcional alas dimensiones de las fotos es decir debe respetar su ancho y alto para ampliar o reducir proporcionalmente es por esto que en ciertos casos la imagen no logra ocupar todo el espacio fisico de la pantalla, la etiqueta picture exige tener la misma imagen repetida varias veces  pero en calidades y resoluciones diferentes que varian segun el dispositivo donde se desee mostrar, esto es necesario por que la etiqueta se creo con el fin de mejorar no solo la visualizacion sino tambien el consumo de datos y la velocidad de carga en algunos dispositivos.
+VIDEO ADAPTATIVO:se trabaja desde css modificando el ancho o el alto en medida de porcentajes.
+MEDIA QUERIES:Los media queries son una extensión muy útil del CSS que permiten detectar las características de los dispositivos que accedan a nuestra web y a partir de esos datos crear hojas de estilo más personalizadas que llevan finalmente a aumentar y mejorar la experiencia del cliente en nuestro sitio.
+Los media queries, permiten que el browser decida cómo mostrar contenido dependiendo de las condiciones que encuentre en el dispositivo y esas condiciones se dan a través de unos media types los cuales podemos agrupar en:
+
+print - Vista de Impresión.
+min-width - Tamaño mínimo en horizontal.
+max-width - Tamaño máximo en horizontal.
+min-height - Tamaño mínimo en vertical.
+max-height - Tamaño máximo en vertical.
+orientation - Posición en la que se encuentre el dispositivo.
+resolution - Tamaño ocupado por el browser en píxeles.
+color - Detecta si la pantalla en que se visualiza el sitio es a color o en blanco y negro.
+light-level - Densidad de la luz del dispositivo.
+
+Dependiendo de los media types deben crearse estilos individuales que se ajusten a las condiciones detectadas. El dispositivo renderizará los estilos creados específicamente para cada condición.
+
+VENTAJAS:
+Permite ajustar el sitio web a cualquier dispositivo.
+Aparecen para mejorar la visualización del diseño adaptable.
+DESVENTAJA:
+Se requiere escribir repetidamente algunas de las reglas css que deseen aplicarse por cada dispositivo agregado. 
+
